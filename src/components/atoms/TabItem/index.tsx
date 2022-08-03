@@ -1,7 +1,10 @@
 import React from "react";
+import { Tab as MUITabItem, TabProps } from "@mui/material";
 
-const TabItem = () => {
-  return <div>TabItem</div>;
+export interface ITabItemProps extends TabProps {}
+
+const TabItem = (props: ITabItemProps) => {
+  return <MUITabItem {...props} />;
 };
 
 export default TabItem;
